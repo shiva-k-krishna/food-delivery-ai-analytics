@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: stg_users
+    description: "Cleaned and standardized user data from the RAW layer."
+
+    columns:
+      - name: user_id
+        description: "Unique identifier for the user."
+        tests:
+          - not_null
+          - unique
+
+      - name: user_age
+        description: "User age converted from the RAW string representation."

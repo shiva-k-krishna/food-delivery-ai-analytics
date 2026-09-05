@@ -1,0 +1,35 @@
+version: 2
+
+sources:
+  - name: raw
+    database: FOOD_DELIVERY
+    schema: RAW
+
+    tables:
+      - name: users
+        columns:
+          - name: user_id
+            tests:
+              - not_null
+              - unique
+      - name: food
+      - name: menu
+      - name: restaurant
+      - name: orders
+        columns:
+          - name: order_id
+            tests:
+              - not_null
+              - unique
+      - name: order_items
+        columns:
+          - name: order_item_id
+            tests:
+              - not_null
+              - unique
+      - name: reviews
+        columns:
+          - name: review_id
+            tests:
+              - not_null
+              - unique

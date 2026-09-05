@@ -1,20 +1,18 @@
-# Python
-.venv/
-__pycache__/
-*.pyc
-
-# Environment / secrets
-.env
-.env.*
-
-# dbt
+# dbt generated files
 target/
 dbt_packages/
 logs/
 
-# VS Code
-.vscode/
+# Python
+__pycache__/
+*.pyc
 
-# OS
+# Environment / credentials
+.env
+*.env
+profiles.yml
+food_delivery_dbt/.user.yml
+
+# OS files
 .DS_Store
 Thumbs.db

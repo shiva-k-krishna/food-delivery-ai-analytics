@@ -1,0 +1,4 @@
+order_status,status_group
+Delivered,Completed
+Cancelled,Cancelled
+Pending,In Progress
