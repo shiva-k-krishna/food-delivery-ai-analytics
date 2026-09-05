@@ -5,10 +5,10 @@ An end-to-end food delivery analytics project built using **Snowflake and dbt**.
 The project transforms raw food delivery data into analytics-ready dimensional models and business-focused marts while demonstrating practical dbt engineering patterns.
 
 ## Architecture
+CSV Data >  Snowflake RAW > dbt STAGING > Dimensions + Facts > Business MARTS
+
 ![Food Delivery Analytics Architecture](architecture.png)
 
-
-CSV Data >  Snowflake RAW > dbt STAGING > Dimensions + Facts > Business MARTS
 
 
 ## Snowflake Layers:
